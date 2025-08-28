@@ -4,7 +4,7 @@
 - 著名的AI治理框架(AI Governance Frameworks)
   - 1.歐盟人工智慧法案(EU AI Act)
   - 2.英國支持創新的 AI 框架(UK pro-innovation AI framework)
-    - 一份非法定白皮書，規定了五個核心原則：公平、透明、問責制、安全性和可競爭性。\
+    - 一份非法定白皮書，規定了五個核心原則：公平、透明、問責制、安全性和可競爭性。
     - 它強調靈活、上下文驅動的方法，使其對於尋求監管一致性而沒有沉重合規負擔的企業非常有用。
   - 3.Executive Order on AI 美國行政命令
     - 拜登政府期間:最初的人工智能行政命令，行政命令14110。
@@ -22,8 +22,10 @@
     - 2019 年首次制定，並於 2024 年更新
     - 鼓勵政府定期審查和調整其人工智慧相關政策和監管框架。
     - `全球`範圍內的廣泛採用，特別是在經合組織成員國。
-  - 8.UNESCO AI ethics framework|聯合國教科文組織 《人工智慧倫理建議書》
+    - 2025.8 發表 《人工智慧開放性》AI OPENNESS: A PRIMER FOR  POLICYMAKERS
+  - 8.UNESCO AI ethics framework|聯合國教科文組織 《人工智慧倫理建議書》Ethics of Artificial Intelligence
     - 第一個關於人工智慧倫理的全球標準。它是由聯合國成員國自願採用的。
-    - 根據聯合國教科文組織促進和平與人權的更廣泛目標，它鼓勵發展包容性、永續和道德的人工智慧。 
+    - 根據聯合國教科文組織促進和平與人權的更廣泛目標，它鼓勵發展包容性、永續和道德的人工智慧。
+    - https://unesdoc.unesco.org/ark:/48223/pf0000381137
   - 9.G7 Code of conduct for advanced AI (2023)先進人工智慧行為準則
 
