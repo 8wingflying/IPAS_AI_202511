@@ -29,3 +29,5 @@
     - https://unesdoc.unesco.org/ark:/48223/pf0000381137
   - 9.G7 Code of conduct for advanced AI (2023)先進人工智慧行為準則
 
+#### 延伸閱讀
+- [ITHOME| AI治理專欄](https://www.ithome.com.tw/tags/ai%E6%B2%BB%E7%90%86)
