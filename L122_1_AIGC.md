@@ -20,4 +20,6 @@
   - Runway ML AI 影片創作與影像處理平台
   - Hedra AI ==> 讓圖片會說話
   - Vidnoz ==> 影片翻譯
-- 簡報生成（如 Gamma、Copilot in PowerPoint）
+- 簡報生成
+  - Gamma AI
+  - Copilot in PowerPoint
