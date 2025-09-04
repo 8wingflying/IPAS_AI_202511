@@ -1,5 +1,5 @@
 ###  AIGC | 人工智慧生成內容 | Artificial Intelligence Generated Content
-- 文字生成(履歷,讀書計劃書,)
+- 文字生成(履歷,讀書計劃書,小說,劇本,....)
   - ChatGPT
   - Claude
   - Gemini
@@ -24,6 +24,9 @@
 - 簡報生成
   - Gamma AI
   - Copilot in PowerPoint
+- 熱門主題
+  - NotebookLM
+  - CURSOR
 - 上`AI工具平台`找你要的工具
   - Futurepedia.io 線上平台
   - 彙集和分類各種人工智慧（AI）工具。
