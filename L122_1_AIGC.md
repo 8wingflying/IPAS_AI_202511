@@ -1,0 +1,23 @@
+###  AIGC | 人工智慧生成內容 | Artificial Intelligence Generated Content
+- 文字生成(履歷,讀書計劃書,)
+  - ChatGPT
+  - Claude
+  - Gemini
+  - Copilot
+  - [Grok](https://grok.com/)
+  - 其他
+- 圖像生成
+  - Playground
+  - DALL·E
+  - Midjourney
+  - Stable Diffusion
+  - 其他
+- 聲音生成  ==> 人工智慧音樂創作
+  - Suno
+- 影片生成 ==> 人工智慧影片創作
+  - Sora
+    - 一款革命性的文字轉視頻AI模型，能將文字提示轉化為含多角色、特定動作及豐富主題背景的短視頻 
+  - Runway ML AI 影片創作與影像處理平台
+  - Hedra AI ==> 讓圖片會說話
+  - Vidnoz ==> 影片翻譯
+- 簡報生成（如 Gamma、Copilot in PowerPoint）
