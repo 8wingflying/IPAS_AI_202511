@@ -28,7 +28,8 @@
   - NotebookLM
   - CURSOR
 - 上`AI工具平台`找你要的工具
+  - https://www.toolify.ai/tw
   - Futurepedia.io 線上平台
-  - 彙集和分類各種人工智慧（AI）工具。
-  - 它就像一個 AI 工具的百科全書，提供了一個集中式的資源，使用者可以在這裡尋找、比較和了解不同的AI工具。
-  - 該平台由 Ayush Pathak 和 Matt Bornstein 於 2023 年初創立，旨在解決 AI 工具資訊分散的問題，方便使用者更有效地利用AI技術。 
+    - 彙集和分類各種人工智慧（AI）工具。
+    - 它就像一個 AI 工具的百科全書，提供了一個集中式的資源，使用者可以在這裡尋找、比較和了解不同的AI工具。
+    - 該平台由 Ayush Pathak 和 Matt Bornstein 於 2023 年初創立，旨在解決 AI 工具資訊分散的問題，方便使用者更有效地利用AI技術。 
