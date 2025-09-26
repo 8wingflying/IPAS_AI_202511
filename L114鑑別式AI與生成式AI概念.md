@@ -1,4 +1,4 @@
-## L114 鑑別式 AI與生成式 AI概念
+# L114 鑑別式 AI與生成式 AI概念
 - L11401 鑑別式 AI與生成式 AI的基本原理
   - 鑑別式AI（Discriminative AI；DAI）
   - 生成式AI（Generative AI） 
@@ -10,11 +10,13 @@
 - CNN 卷積神經網路 Convolutional neural network ==> ViT(2020) ==> CLIP(2021)
 - RNN ==> Transformer(2017) ==> BERT(2018) ==>預訓練模型 (Pre-Trained Model) ==> LLM
 - GenAI(GAN, VAE)
-- RL
+- 增強式學習 (Reinforcement Learning, RL)
 ## AI 分類3:應用領域
 - 電腦視覺(Computer Vision)
 - 自然語言處理(NLP) Natural Language Processing
 - 
 
 
-## 
+## 增強式學習 (Reinforcement Learning, RL)
+- [【機器學習2021】概述增強式學習 (Reinforcement Learning, RL) (一)](https://www.youtube.com/watch?v=XWukX-ayIrs)
+- https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php
