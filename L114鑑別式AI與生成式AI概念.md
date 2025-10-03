@@ -8,13 +8,13 @@
 ## AI 分類2:技術領域(深度學習Deep Learning)
 - 神經網路 感知機(Perceptron) ==> 多層感知機(MLP)
 - CNN 卷積神經網路 Convolutional neural network ==> ViT(2020) ==> CLIP(2021)
-- RNN ==> Transformer(2017) ==> BERT(2018) ==>預訓練模型 (Pre-Trained Model) ==> LLM
+- RNN ==> Transformer(2017) ==> BERT(2018) ==>預訓練模型 (Pre-Trained Model) ==> LLM==> MLLM
 - GenAI(GAN, VAE)
 - 增強式學習 (Reinforcement Learning, RL)
 ## AI 分類3:應用領域
 - 電腦視覺(Computer Vision)
 - 自然語言處理(NLP) Natural Language Processing
-- 
+
 
 
 ## 增強式學習 (Reinforcement Learning, RL)
