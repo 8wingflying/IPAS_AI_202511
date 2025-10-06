@@ -1,4 +1,8 @@
 ## GEMINI實作
+- 以物件導向（Object-Oriented Programming, OOP）方式實作 Isolation Forest 異常檢測演算法的範例程式碼。
+- 這個實作範例將包含兩個主要類別(Class)：
+  - IsolationTree：用來建立單棵隨機隔離樹。
+  - IsolationForest：用來集成多棵隔離樹，計算最終的異常分數。
 ```python
 import numpy as np
 from typing import List, Union
