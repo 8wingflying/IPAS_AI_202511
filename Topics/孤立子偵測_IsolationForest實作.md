@@ -1,4 +1,4 @@
-## 
+## GEMINI實作
 ```python
 import numpy as np
 from typing import List, Union
