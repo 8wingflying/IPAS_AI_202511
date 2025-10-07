@@ -297,3 +297,6 @@ plt.ylabel("MSE Loss")
 plt.show()
 ```
 ## 多層感知機的權重更新機制 ==> 反向傳播(backpropagation)
+- https://en.wikipedia.org/wiki/Backpropagation
+- https://www.geeksforgeeks.org/machine-learning/backpropagation-in-neural-network/
+- https://www.youtube.com/watch?v=Ilg3gGewQ5U
