@@ -205,8 +205,92 @@ print('Accuracy: %s' % clf.score(X, y))
 for i, p in enumerate(predictions[:10]):
     print('True: %s, Predicted: %s' % (y[i], p))
 ```
-#### 使用多層感知機進行迴歸分析(Regression Analysis）
+#### 使用感知機進行迴歸分析(Regression Analysis）
+- CHATGPT:簡單建立線性回歸的資料 在使用python物件導向方式撰寫感知機 並分析資料
+  - 建立簡單的線性資料集（例如 𝑦=3𝑥+5+噪音)
+  - 以物件導向（OOP）方式實作感知機（Perceptron）模型進行迴歸分析
+  - 分析訓練結果與可視化預測
 ```python
+## 一、建立線性資料
+import numpy as np
+import matplotlib.pyplot as plt
 
+# 產生線性資料
+np.random.seed(42)
+X = np.linspace(0, 10, 50).reshape(-1, 1)
+y = 3 * X + 5 + np.random.randn(50, 1) * 2  # y = 3x + 5 + 噪音
+
+plt.scatter(X, y, color='blue', label='Data')
+plt.title("Linear Data Example")
+plt.xlabel("X")
+plt.ylabel("y")
+plt.legend()
+plt.show()
+
+## 二、以物件導向方式實作感知機 (Perceptron Regression)
+
+class PerceptronRegressor:
+    """
+    一個簡單的感知機迴歸模型 (類似線性迴歸)
+    y_pred = w * x + b
+    使用梯度下降 (Gradient Descent) 更新權重
+    """
+    def __init__(self, lr=0.01, epochs=1000):
+        self.lr = lr
+        self.epochs = epochs
+        self.w = None
+        self.b = None
+        self.loss_history = []
+
+    def fit(self, X, y):
+        n_samples, n_features = X.shape
+        self.w = np.zeros((n_features, 1))
+        self.b = 0
+
+        for epoch in range(self.epochs):
+            y_pred = np.dot(X, self.w) + self.b
+            error = y_pred - y
+            loss = np.mean(error ** 2)
+
+            # 記錄損失
+            self.loss_history.append(loss)
+
+            # 更新參數
+            dw = (2 / n_samples) * np.dot(X.T, error)
+            db = (2 / n_samples) * np.sum(error)
+            self.w -= self.lr * dw
+            self.b -= self.lr * db
+
+    def predict(self, X):
+        return np.dot(X, self.w) + self.b
+
+## 三、訓練與分析
+
+# 初始化並訓練模型
+model = PerceptronRegressor(lr=0.01, epochs=1000)
+model.fit(X, y)
+
+# 預測
+y_pred = model.predict(X)
+
+# 顯示訓練結果
+print(f"權重 w = {model.w.flatten()[0]:.3f}, 偏差 b = {model.b:.3f}")
+
+# 可視化結果
+plt.figure(figsize=(10, 5))
+plt.subplot(1, 2, 1)
+plt.scatter(X, y, label='Data')
+plt.plot(X, y_pred, color='red', label='Model Prediction')
+plt.title("Perceptron Regression Result")
+plt.xlabel("X")
+plt.ylabel("y")
+plt.legend()
+
+plt.subplot(1, 2, 2)
+plt.plot(model.loss_history)
+plt.title("Loss Curve")
+plt.xlabel("Epoch")
+plt.ylabel("MSE Loss")
+plt.show()
 ```
 ## 多層感知機的權重更新機制 ==> 反向傳播(backpropagation)
