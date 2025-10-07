@@ -90,10 +90,6 @@ if __name__ == '__main__':
 ```
 ## 使用多層感知機(MLP)建構NOR邏輯閘運作
 ```python
-from and_gate import AND
-from or_gate import OR
-from nand_gate import NAND
-
 
 def XOR(x1, x2):
     s1 = NAND(x1, x2)
