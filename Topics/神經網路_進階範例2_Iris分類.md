@@ -253,3 +253,6 @@ plt.ylabel("Cross-Entropy Loss")
 plt.legend()
 plt.show()
 ```
+- ReLU 通常在隱藏層表現最佳，因為梯度不易消失。
+- Tanh 在中小型資料集表現穩定，且較 Sigmoid 收斂快。
+- Sigmoid 在多層時常有梯度消失問題，但適合初學展示非線性轉換概念。
