@@ -297,6 +297,19 @@ plt.ylabel("MSE Loss")
 plt.show()
 ```
 ## 多層感知機的權重更新機制 ==> 反向傳播(backpropagation)
+- Backpropagation（反向傳播／誤差反向傳遞）演算法
+- 經典論文 “Learning representations by back-propagating errors”
+  - 作者：David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams
+  - 刊登在 Nature, 1986 年 (Nature 323: 533–536)
+  - 這篇論文的核心貢獻與重點包括：
+    - 對多層神經網絡進行誤差後傳
+      - 將誤差從輸出層反向傳遞到隱藏層，計算每個連結的誤差貢獻，從而更新權重。這使得即使有隱藏層，網絡也能通過梯度下降來調整內部參數。 
+    - 示範隱藏單元（hidden units）的訓練效果
+      - 展示了隱藏層能學到內部表示（internal representation），提高網絡的泛化能力。這使得神經網絡不僅僅是輸入到輸出的直接映射，而能有中間抽象層次。
+  - 誰發明 Backpropagation??
+    - 爭論 ==> https://medium.com/syncedreview/who-invented-backpropagation-hinton-says-he-didnt-but-his-work-made-it-popular-e0854504d6d1
+    - HITCON 的貢獻 ==>What I have claimed is that I was the person to clearly demonstrate that backpropagation could learn interesting internal representations and that this is what made it popular.”
 - https://en.wikipedia.org/wiki/Backpropagation
+- https://arxiv.org/abs/2301.09977
 - https://www.geeksforgeeks.org/machine-learning/backpropagation-in-neural-network/
 - https://www.youtube.com/watch?v=Ilg3gGewQ5U
