@@ -1,10 +1,10 @@
 # L114 鑑別式 AI與生成式 AI概念
 - L11401 鑑別式 AI與生成式 AI的基本原理
-  - 鑑別式AI（Discriminative AI；DAI）
-  - 生成式AI（Generative AI） 
 - L11402 鑑別式 AI與生成式 AI的整合應用
 
 ## AI 分類1:鑑別式 AI與生成式 AI
+- 鑑別式AI（Discriminative AI；DAI）
+- 生成式AI（Generative AI） 
 ## AI 分類2:技術領域(深度學習Deep Learning)
 - 引言:神經網路 感知機(Perceptron) ==> 多層感知機(MLP)
 - CNN 卷積神經網路 Convolutional neural network ==> ViT(2020) ==> CLIP(2021)
