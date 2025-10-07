@@ -8,14 +8,105 @@
 
 # 單純感知機模型(沒有學習功能)
 ## 使用感知機模型建構簡單邏輯閘運作
+- AND 邏輯閘的感知機模型
 ```python
+import numpy as np
 
+
+def AND(x1, x2):
+    x = np.array([x1, x2])
+    w = np.array([0.6, 0.4])
+    b = -0.7
+    tmp = np.sum(w*x) + b
+    if tmp <= 0:
+        return 0
+    else:
+        return 1
+
+if __name__ == '__main__':
+    for xs in [(0, 0), (1, 0), (0, 1), (1, 1)]:
+        y = AND(xs[0], xs[1])
+        print(str(xs) + " -> " + str(y))
 ```
-## 使用多層感知機建構XOR邏輯閘運作
+- NAND 邏輯閘的感知機模型
 ```python
+import numpy as np
 
+
+def NAND(x1, x2):
+    x = np.array([x1, x2])
+    w = np.array([-0.6, -0.6])
+    b = 0.8
+    tmp = np.sum(w*x) + b
+    if tmp <= 0:
+        return 0
+    else:
+        return 1
+
+if __name__ == '__main__':
+    for xs in [(0, 0), (1, 0), (0, 1), (1, 1)]:
+        y = NAND(xs[0], xs[1])
+        print(str(xs) + " -> " + str(y))
 ```
-# 監督式(機器學習) ==> 看看機器是如何`學習`
+- OR 邏輯閘的感知機模型
+```python
+import numpy as np
+
+
+def OR(x1, x2):
+    x = np.array([x1, x2])
+    w = np.array([0.5, 0.5])
+    b = -0.4
+    tmp = np.sum(w*x) + b
+    if tmp <= 0:
+        return 0
+    else:
+        return 1
+
+if __name__ == '__main__':
+    for xs in [(0, 0), (1, 0), (0, 1), (1, 1)]:
+        y = OR(xs[0], xs[1])
+        print(str(xs) + " -> " + str(y))
+```
+- NOR 邏輯閘的感知機模型
+```python
+import numpy as np
+
+
+def NOR(x1, x2):
+    x = np.array([x1, x2])
+    w = np.array([-0.5, -0.5])
+    b = 0.4
+    tmp = np.sum(w*x) + b
+    if tmp <= 0:
+        return 0
+    else:
+        return 1
+
+if __name__ == '__main__':
+    for xs in [(0, 0), (1, 0), (0, 1), (1, 1)]:
+        y = NOR(xs[0], xs[1])
+        print(str(xs) + " -> " + str(y))
+```
+## 使用多層感知機(MLP)建構NOR邏輯閘運作
+```python
+from and_gate import AND
+from or_gate import OR
+from nand_gate import NAND
+
+
+def XOR(x1, x2):
+    s1 = NAND(x1, x2)
+    s2 = OR(x1, x2)
+    y = AND(s1, s2)
+    return y
+
+if __name__ == '__main__':
+    for xs in [(0, 0), (1, 0), (0, 1), (1, 1)]:
+        y = XOR(xs[0], xs[1])
+        print(str(xs) + " -> " + str(y))
+```
+# 監督式(機器學習) ==> 分類--迴歸分析(Regression Analysis）
 #### 使用感知機進行分類 
 - 使用物件導向技術撰寫感知機類別class Perceptron
 ```python
@@ -118,3 +209,8 @@ print('Accuracy: %s' % clf.score(X, y))
 for i, p in enumerate(predictions[:10]):
     print('True: %s, Predicted: %s' % (y[i], p))
 ```
+#### 使用多層感知機進行迴歸分析(Regression Analysis）
+```python
+
+```
+## 多層感知機的權重更新機制 ==> 反向傳播(backpropagation)
