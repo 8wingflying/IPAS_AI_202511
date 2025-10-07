@@ -206,7 +206,7 @@ for i, p in enumerate(predictions[:10]):
     print('True: %s, Predicted: %s' % (y[i], p))
 ```
 #### 使用感知機進行迴歸分析(Regression Analysis）
-- CHATGPT:簡單建立線性回歸的資料 在使用python物件導向方式撰寫感知機 並分析資料
+- CHATGPT:簡單建立線性回歸的資料 再使用python物件導向方式撰寫感知機 並分析資料
   - 建立簡單的線性資料集（例如 𝑦=3𝑥+5+噪音)
   - 以物件導向（OOP）方式實作感知機（Perceptron）模型進行迴歸分析
   - 分析訓練結果與可視化預測
