@@ -1,0 +1,44 @@
+Perceptron algorithm in plain Python
+The perceptron is a simple supervised machine learning algorithm and one of the earliest neural network architectures. It was introduced by Rosenblatt in the late 1950s. A perceptron represents a binary linear classifier that maps a set of training examples (of 
+ dimensional input vectors) onto binary output values using a 
+ dimensional hyperplane.
+
+The perceptron as follows.
+
+Given:
+
+dataset 
+with 
+ being a 
+dimensional vector 
+ being a binary target variable, 
+The perceptron is a very simple neural network:
+
+it has a real-valued weight vector 
+it has a real-valued bias 
+it uses the Heaviside step function as its activation function
+A perceptron is trained using gradient descent. The training algorithm has different steps. In the beginning (step 0) the model parameters are initialized. The other steps (see below) are repeated for a specified number of training iterations or until the parameters have converged.
+
+**Step 0: ** Initialize the weight vector and bias with zeros (or small random values).
+
+**Step 1: ** Compute a linear combination of the input features and weights. This can be done in one step for all training examples, using vectorization and broadcasting: 
+
+where 
+ is a matrix of shape 
+ that holds all training examples, and 
+ denotes the dot product.
+
+**Step 2: ** Apply the Heaviside function, which returns binary values:
+
+
+** Step 3: ** Compute the weight updates using the perceptron learning rule
+
+ 
+
+where 
+ is the learning rate.
+
+** Step 4: ** Update the weights and bias
+
+ 
+
