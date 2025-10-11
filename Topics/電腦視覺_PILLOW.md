@@ -1,4 +1,4 @@
-##📚 Pillow（Python Imaging Library, PIL
+## 📚 Pillow（Python Imaging Library, PIL
 > Pillow 是 Python 影像處理的標準函式庫，  
 > 支援 **影像載入、轉換、濾鏡、繪圖、批次處理與影像生成** 等功能。  
 > 它與 NumPy、OpenCV、Matplotlib 等套件結合後，  
