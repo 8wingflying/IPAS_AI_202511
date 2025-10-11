@@ -199,3 +199,136 @@ inputs = tokenizer(prompt, return_tensors="pt")
 print(model.generate(**inputs, max_new_tokens=60))
 
 ```
+
+## # 🤗 Hugging Face 典型開發流程總覽圖  
+> **Train → Fine-Tune → Evaluate → Deploy → Share 全流程示意**
+
+---
+
+## 🚀 Hugging Face 開發全流程總覽表
+
+| 階段 | 使用模組 | 主要函數 / 類別 | 功能說明 |
+|------|------------|------------------|------------|
+| **1️⃣ 載入資料** | `datasets` | `load_dataset()` | 取得公開或自建訓練資料（IMDB, SQuAD, WikiText 等） |
+| **2️⃣ 分詞與編碼** | `tokenizers` / `transformers` | `AutoTokenizer.from_pretrained()` / `.encode()` | 將文字轉為可餵入模型的 token ID |
+| **3️⃣ 載入預訓練模型** | `transformers` | `AutoModel.from_pretrained()` / `pipeline()` | 載入 Transformer 架構（BERT, GPT, T5, ViT...） |
+| **4️⃣ 模型微調訓練** | `Trainer` / `accelerate` / `peft` | `Trainer.train()` / `get_peft_model()` | 使用 LoRA / DPO / RLHF 進行高效微調 |
+| **5️⃣ 效能評估** | `evaluate` | `load("accuracy")`, `.compute()` | 計算模型表現（Accuracy, BLEU, ROUGE, F1 等） |
+| **6️⃣ 模型部署** | `gradio` / `FastAPI` | `gr.Interface()`, `app.get()` | 建立互動式 Web Demo 或 API |
+| **7️⃣ 模型上傳分享** | `huggingface_hub` | `login()`, `upload_file()` | 將模型或資料集上傳至 Hugging Face Hub |
+| **8️⃣ 持續最佳化** | `optimum` / `accelerate` | `optimize_model()` / `.prepare()` | 模型壓縮、加速與跨硬體部署 |
+
+---
+
+## 🧠 補充說明
+
+- **整合優勢**：  
+  Hugging Face 將 `datasets`、`transformers`、`evaluate`、`peft`、`gradio`、`hub` 整合成一條龍式 AI 工作流程。
+
+- **應用領域**：  
+  - NLP：情感分析、摘要生成、問答系統、翻譯  
+  - CV：影像分類、物件偵測、生成模型（Stable Diffusion）  
+  - Audio：語音辨識、TTS、音樂生成  
+  - Multimodal：文字 + 圖像（CLIP、BLIP、LLaVA）
+
+---
+
+## 🧩 範例工作流程（文字分類任務）
+
+# 🤗 Hugging Face 典型開發流程總覽圖  
+> **Train → Fine-Tune → Evaluate → Deploy → Share 全流程示意**
+
+---
+
+## 🚀 Hugging Face 開發全流程總覽表
+
+| 階段 | 使用模組 | 主要函數 / 類別 | 功能說明 |
+|------|------------|------------------|------------|
+| **1️⃣ 載入資料** | `datasets` | `load_dataset()` | 取得公開或自建訓練資料（IMDB, SQuAD, WikiText 等） |
+| **2️⃣ 分詞與編碼** | `tokenizers` / `transformers` | `AutoTokenizer.from_pretrained()` / `.encode()` | 將文字轉為可餵入模型的 token ID |
+| **3️⃣ 載入預訓練模型** | `transformers` | `AutoModel.from_pretrained()` / `pipeline()` | 載入 Transformer 架構（BERT, GPT, T5, ViT...） |
+| **4️⃣ 模型微調訓練** | `Trainer` / `accelerate` / `peft` | `Trainer.train()` / `get_peft_model()` | 使用 LoRA / DPO / RLHF 進行高效微調 |
+| **5️⃣ 效能評估** | `evaluate` | `load("accuracy")`, `.compute()` | 計算模型表現（Accuracy, BLEU, ROUGE, F1 等） |
+| **6️⃣ 模型部署** | `gradio` / `FastAPI` | `gr.Interface()`, `app.get()` | 建立互動式 Web Demo 或 API |
+| **7️⃣ 模型上傳分享** | `huggingface_hub` | `login()`, `upload_file()` | 將模型或資料集上傳至 Hugging Face Hub |
+| **8️⃣ 持續最佳化** | `optimum` / `accelerate` | `optimize_model()` / `.prepare()` | 模型壓縮、加速與跨硬體部署 |
+
+---
+
+## 🧠 補充說明
+
+- **整合優勢**：  
+  Hugging Face 將 `datasets`、`transformers`、`evaluate`、`peft`、`gradio`、`hub` 整合成一條龍式 AI 工作流程。
+
+- **應用領域**：  
+  - NLP：情感分析、摘要生成、問答系統、翻譯  
+  - CV：影像分類、物件偵測、生成模型（Stable Diffusion）  
+  - Audio：語音辨識、TTS、音樂生成  
+  - Multimodal：文字 + 圖像（CLIP、BLIP、LLaVA）
+
+---
+
+## 🧩 範例工作流程（文字分類任務）
+
+```python
+from datasets import load_dataset
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
+import evaluate
+
+# 1. 載入資料
+dataset = load_dataset("imdb")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+# 2. 分詞
+def preprocess(examples):
+    return tokenizer(examples["text"], truncation=True, padding="max_length")
+encoded = dataset.map(preprocess, batched=True)
+
+# 3. 載入模型
+model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
+
+# 4. 訓練設定
+args = TrainingArguments("bert-imdb", evaluation_strategy="epoch", per_device_train_batch_size=8)
+
+# 5. 建立 Trainer
+trainer = Trainer(model=model, args=args, train_dataset=encoded["train"], eval_dataset=encoded["test"])
+
+# 6. 訓練
+trainer.train()
+
+# 7. 評估
+metric = evaluate.load("accuracy")
+preds = trainer.predict(encoded["test"])
+print(metric.compute(predictions=preds.predictions.argmax(-1), references=preds.label_ids))
+```
+
+## 🚀 Hugging Face 開發全流程總覽表
+
+| 階段 | 使用模組 | 主要函數 / 類別 | 功能說明 |
+|------|------------|------------------|------------|
+| **1️⃣ 載入資料** | `datasets` | `load_dataset()` | 取得公開或自建訓練資料（IMDB, SQuAD, WikiText 等） |
+| **2️⃣ 分詞與編碼** | `tokenizers` / `transformers` | `AutoTokenizer.from_pretrained()` / `.encode()` | 將文字轉為可餵入模型的 token ID |
+| **3️⃣ 載入預訓練模型** | `transformers` | `AutoModel.from_pretrained()` / `pipeline()` | 載入 Transformer 架構（BERT, GPT, T5, ViT...） |
+| **4️⃣ 模型微調訓練** | `Trainer` / `accelerate` / `peft` | `Trainer.train()` / `get_peft_model()` | 使用 LoRA / DPO / RLHF 進行高效微調 |
+| **5️⃣ 效能評估** | `evaluate` | `load("accuracy")`, `.compute()` | 計算模型表現（Accuracy, BLEU, ROUGE, F1 等） |
+| **6️⃣ 模型部署** | `gradio` / `FastAPI` | `gr.Interface()`, `app.get()` | 建立互動式 Web Demo 或 API |
+| **7️⃣ 模型上傳分享** | `huggingface_hub` | `login()`, `upload_file()` | 將模型或資料集上傳至 Hugging Face Hub |
+| **8️⃣ 持續最佳化** | `optimum` / `accelerate` | `optimize_model()` / `.prepare()` | 模型壓縮、加速與跨硬體部署 |
+
+---
+
+
+## 模型分享與部署（Gradio + Hub）
+```python
+import gradio as gr
+from transformers import pipeline
+
+classifier = pipeline("sentiment-analysis", model="bert-base-uncased")
+
+def predict(text):
+    return classifier(text)[0]
+
+demo = gr.Interface(fn=predict, inputs="text", outputs="label", title="Sentiment Classifier")
+demo.launch()
+
+```
