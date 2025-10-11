@@ -4,6 +4,7 @@
 > 無縫整合，形成完整的 AI 開發流程：
 >
 > 「Train → Fine-Tune → Evaluate → Deploy → Share」
+>
 > 常見應用包括：
 > - 🧠 NLP：情感分析、翻譯、摘要、問答
 > - 🖼️ CV：影像分類、物件偵測
