@@ -1,5 +1,5 @@
 # 神經網路_進階範例2_Iris分類
-- 使用 Python 手刻多層感知機（MLP, Multi-Layer Perceptron）**進行 Iris 資料集分類的完整範例，包含：
+- 使用 Python 手刻多層感知機（MLP, Multi-Layer Perceptron）進行 Iris 資料集分類的完整範例，包含：
   - ✅ 使用物件導向 (OOP) 撰寫
   - ✅ 實作 Forward / Backpropagation
   - ✅ 分類結果與準確率分析
