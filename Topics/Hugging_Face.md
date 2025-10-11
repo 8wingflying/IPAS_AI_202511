@@ -1,16 +1,16 @@
 ## **Hugging Face** 
->Hugging Face 生態系 是 AI 模型開發的標準平台，
->它將 資料（datasets）+ 模型（transformers）+ 微調（peft）+ 評估（evaluate）+ 部署（gradio/hub）
->無縫整合，形成完整的 AI 開發流程：
+> Hugging Face 生態系 是 AI 模型開發的標準平台，
+> 它將 資料（datasets）+ 模型（transformers）+ 微調（peft）+ 評估（evaluate）+ 部署（gradio/hub）
+> 無縫整合，形成完整的 AI 開發流程：
 >
->「Train → Fine-Tune → Evaluate → Deploy → Share」
+> 「Train → Fine-Tune → Evaluate → Deploy → Share」
 
 ## 常見應用包括：
->🧠 NLP：情感分析、翻譯、摘要、問答
->🖼️ CV：影像分類、物件偵測
->🎵 Audio：語音辨識、音樂生成
->💬 Chatbot：RAG、LLM 應用開發
->🚀 微調：LoRA、PEFT、QLoRA
+> 🧠 NLP：情感分析、翻譯、摘要、問答
+> 🖼️ CV：影像分類、物件偵測
+> 🎵 Audio：語音辨識、音樂生成
+> 💬 Chatbot：RAG、LLM 應用開發
+> 🚀 微調：LoRA、PEFT、QLoRA
 
 # 🤗 Hugging Face 各項功能與常用函數總覽表  
 > **中英對照 + 模組分類 + 範例說明**
