@@ -1,5 +1,8 @@
 ## NLP 工具
-- spaCy
+- NTLK
+- spaCy: 支援多種語言的詞形還原
+- Stanza: Stanford NLP工具,支援60+語言
+- UDPipe: 通用依存關係解析器
 - transformers
 
 ## NTLK模組
@@ -46,7 +49,37 @@
   - 減少詞彙變化,將相似單詞統一處理
   - 降低文本特徵維度
   - 提高信息檢索和文本分析效率
+- NLTK中的詞幹提取器
+  - `1.` PorterStemmer (最常用)
+  - `2.` LancasterStemmer (激進型)
+  - `3.` SnowballStemmer (多語言支援) Porter算法的改進版本,支援多種語言。
+  - `4.` RegexpStemmer (自定義規則)  使用正則表達式自定義詞幹提取規則。
+```python
+# Stemming 示例
+from nltk.stem import PorterStemmer
+stemmer = PorterStemmer()
+print(stemmer.stem("better"))  # better
 
+# Lemmatization 示例
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+print(lemmatizer.lemmatize("better", pos='a'))  # good
+```
+## 詞形還原 (Lemmatization)
+-  將單詞還原到其字典形式(詞元 lemma)的過程,與詞幹提取不同,它會考慮單詞的詞性和語境,確保返回的是真實存在的單詞。
+```python
+"am", "are", "is" → "be"
+"better" → "good" (形容詞比較級)
+"running" → "run"
+"mice" → "mouse"
+"went" → "go"
+```
+- 定義:
+  - 將單詞的屈折形式還原到基本形式(詞元)
+  - 考慮詞性(名詞、動詞、形容詞等)
+  - 使用詞典和形態學分析
+  - 結果必定是真實單詞
+- NLTK中的WordNetLemmatizer
 ## 範例
 ```python
 import nltk
