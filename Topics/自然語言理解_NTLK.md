@@ -34,6 +34,19 @@
 - distance: 計算字串相似度
 - translate: 機器翻譯相關工具
 - draw: 可視化句法樹
+
+## 詞幹提取 (Stemming) 
+- 將單詞還原到其基本形式(詞幹)的過程,通過移除詞綴(前綴、後綴)來獲得單詞的核心部分。
+```python
+"running", "runs", "ran" → "run"
+"better", "good" → 可能處理為相似形式
+"connection", "connected", "connecting" → "connect"
+```
+- 目的:
+  - 減少詞彙變化,將相似單詞統一處理
+  - 降低文本特徵維度
+  - 提高信息檢索和文本分析效率
+
 ## 範例
 ```python
 import nltk
