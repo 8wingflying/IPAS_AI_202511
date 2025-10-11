@@ -6,7 +6,6 @@
 >「Train → Fine-Tune → Evaluate → Deploy → Share」
 
 ## 常見應用包括：
-
 >🧠 NLP：情感分析、翻譯、摘要、問答
 >🖼️ CV：影像分類、物件偵測
 >🎵 Audio：語音辨識、音樂生成
