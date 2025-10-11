@@ -1,6 +1,4 @@
 ## **Hugging Face** 
-- Hugging Face 是目前 生成式 AI、NLP、CV 與多模態模型的核心生態系，整合了 Transformers、Datasets、Tokenizers、Accelerate、PEFT、Diffusers、Gradio 等模組，提供 訓練、推論、微調、部署 的完整解決方案。
-
 >Hugging Face 生態系 是 AI 模型開發的標準平台，
 >它將 資料（datasets）+ 模型（transformers）+ 微調（peft）+ 評估（evaluate）+ 部署（gradio/hub）
 >無縫整合，形成完整的 AI 開發流程：
