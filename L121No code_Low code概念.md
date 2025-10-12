@@ -4,6 +4,16 @@
 - No Code vs Low Code vs Full/High code
 
 ### 重要工具與平台: LOW-code
+- [Top 10 Low-code Platforms for Your App Development](https://www.appsmith.com/blog/low-code-platforms)
+- Appsmith | Open-Source Low-Code Application Platform  https://www.appsmith.com/
+- Mendix | Low-Code Application Development Platform   https://www.mendix.com
+- OutSystems | AI-Powered Low-Code for Enterprise Innovation   https://www.outsystems.com/
+- Retool | Build internal software better, with AI   https://retool.com/
+- Pega
+- Oracle Apex
+- Zoho Creator
+- Appian
+- Superblocks
 - MICROSOFT POWER PLATFORM
   - https://www.microsoft.com/zh-tw/power-platform
   - Power BI: 發掘強大的深入解析，並將其付諸為影響力。
@@ -22,6 +32,28 @@
   - 參考資料
     - https://learn.microsoft.com/zh-tw/power-apps/powerapps-overview
     - https://www.microsoft.com/zh-tw/power-platform/products/power-apps  
+
+### 重要工具與平台: LOW-code(開放原始碼)
+- https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars
+- n8n
+  - https://n8n.io/
+  - https://docs.n8n.io/
+  - https://github.com/n8n-io/n8n 
+- Dify
+- NocoDB
+- Flowise
+- Appsmith
+- ToolJet
+- Refine
+- Supervision
+- Budibase
+- teable
+- kestra
+- Amis
+- APIJSON
+- NocoBase
+
+
 #### 延伸閱讀
 - [Awesome NoCode / LowCode](https://github.com/kairichard/awesome-nocode-lowcode)
 - https://www.ibm.com/think/topics/low-code-vs-no-code
@@ -35,6 +67,3 @@
 - [n8n、Make、Zapier、IFTTT：4 大 No Code 自動化串接工具詳細比較一次看 | Jaykee Chou](https://www.ragic.com/intl/zh-TW/blog/466/no-code-integration-tools-comparison-n8n-make-zapier-ifttt)
 - https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars
 
-#### Low-code Platforms
-- [Top 10 Low-code Platforms for Your App Development](https://www.appsmith.com/blog/low-code-platforms)
-- https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars
