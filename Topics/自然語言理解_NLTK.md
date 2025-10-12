@@ -5,7 +5,7 @@
 - UDPipe: 通用依存關係解析器
 - transformers
 
-## NTLK模組
+## NLTK模組
 - NLTK (Natural Language Toolkit)
 - NLTK是Python中最著名的自然語言處理(NLP)函式庫之一,提供了豐富的文本處理工具和語料庫。以下是主要模組的介紹:
 - 核心模組
