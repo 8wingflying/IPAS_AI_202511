@@ -11,6 +11,11 @@
 - RNN ==> Transformer(2017) ==> BERT(2018) ==>預訓練模型 (Pre-Trained Model) ==> LLM==> MLLM
 - GenAI(GAN, VAE)模型
 - 深度增強式學習(Deep Reinforcement Learning, DRL)
+#### 擴散模型(Diffusion Model) 2022年火紅
+- https://theaisummer.com/diffusion-models/
+- https://shao.fun/blog/w/how-diffusion-models-work.html
+- https://novelai.net/
+
 ## AI 分類3:應用領域 ==> 產業應用
 - 電腦視覺(Computer Vision)
 - 自然語言處理(NLP) Natural Language Processing
