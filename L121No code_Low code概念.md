@@ -76,7 +76,7 @@
   - Akkio
   - PyCaret
   - https://www.neurond.com/blog/no-code-machine-learning-platforms
-
+- https://www.airtable.com/articles/no-code-ai-tools
 #### 延伸閱讀
 - [Awesome NoCode / LowCode](https://github.com/kairichard/awesome-nocode-lowcode)
 - https://www.ibm.com/think/topics/low-code-vs-no-code
