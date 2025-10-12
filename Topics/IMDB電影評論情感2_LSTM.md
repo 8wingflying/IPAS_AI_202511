@@ -3,6 +3,8 @@
   - LSTM 
 ## LSTM
 - https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+- [An Empirical Exploration of Recurrent Network Architectures](https://proceedings.mlr.press/v37/jozefowicz15.html)
+- [Exploring the Limits of Language Modeling](https://arxiv.org/abs/1602.02410)
 
 ## 🚀 延伸方向
 | 方法 | 說明 |
