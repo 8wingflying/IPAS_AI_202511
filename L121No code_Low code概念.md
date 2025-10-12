@@ -53,6 +53,29 @@
 - APIJSON
 - NocoBase
 
+### NO-code 重要工具與平台:
+- 流程自動化
+  - [n8n、Make、Zapier、IFTTT：4 大 No Code 自動化串接工具詳細比較一次看 | Jaykee Chou](https://www.ragic.com/intl/zh-TW/blog/466/no-code-integration-tools-comparison-n8n-make-zapier-ifttt)
+  - n8n
+  - Make
+  - Zapier
+  - IFTTT
+- NO-code ML無程式碼機器學習 (ML) 平台
+  - 使用視覺化拖放平台來自動建置機器學習模型並產生預測，而無需編寫任何程式碼。
+  - 可自動化資料收集、資料清除、模型選擇、模型訓練和模型部署的程序。
+  - 無程式碼 ML 讓 機器學習 實現大眾化。
+  - 無程式碼讓沒有 ML 知識或程式設計經驗的業務分析師，能夠建置機器學習模型並產生預測以解決直接問題，例如預測客戶何時可能流失或何時交付訂單。
+  - DataRobot
+  - Google Teachable Machine
+  - 三大功有雲平台
+    - Google AutoML
+    - Amazon SageMaker
+    - Microsoft Lobe
+  - RunwayML
+  - Obviously AI
+  - Akkio
+  - PyCaret
+  - https://www.neurond.com/blog/no-code-machine-learning-platforms
 
 #### 延伸閱讀
 - [Awesome NoCode / LowCode](https://github.com/kairichard/awesome-nocode-lowcode)
@@ -64,6 +87,5 @@
 - [Top No-Code AI Tools of 2025: In-Depth Guide](https://buildfire.com/no-code-ai-tools/)
 - [The Ultimate Guide to No-Code AI Platforms: How to Build AI-Powered Apps Without Coding](https://smartdev.com/the-ultimate-guide-to-no-code-ai-platforms-how-to-build-ai-powered-apps-without-coding/)
 - [The best no-code AI tools for 2025: The ultimate guide](https://www.airtable.com/articles/no-code-ai-tools)
-- [n8n、Make、Zapier、IFTTT：4 大 No Code 自動化串接工具詳細比較一次看 | Jaykee Chou](https://www.ragic.com/intl/zh-TW/blog/466/no-code-integration-tools-comparison-n8n-make-zapier-ifttt)
 - https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars
 
