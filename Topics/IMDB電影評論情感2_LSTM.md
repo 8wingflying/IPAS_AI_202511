@@ -1,8 +1,10 @@
 # IMDB電影評論情感
 - 利用 IMDB 電影評論資料集（IMDb Movie Reviews Dataset），訓練底下模型 來預測影評是正面 (Positive) 還是負面 (Negative)
   - LSTM 
+## LSTM
+- https://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
-## 🚀 十、延伸方向
+## 🚀 延伸方向
 | 方法 | 說明 |
 |------|------|
 | **BiLSTM** | 同時考慮前後文資訊 |
@@ -10,7 +12,7 @@
 | **Attention 機制** | 提升模型對關鍵詞的注意力 |
 | **CNN-LSTM 結構** | 強化特徵抽取能力 |
 
-## 範例一:
+
 # 🎬 使用 LSTM 分析 IMDB 電影評論情感
 
 ## 📘 一、實驗目標
