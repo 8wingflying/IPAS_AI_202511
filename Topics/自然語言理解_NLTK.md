@@ -1,5 +1,5 @@
 ## NLP 工具
-- NTLK
+- NLTK
 - spaCy: 支援多種語言的詞形還原
 - Stanza: Stanford NLP工具,支援60+語言
 - UDPipe: 通用依存關係解析器
