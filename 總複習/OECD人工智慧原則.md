@@ -30,7 +30,7 @@
 
 ---
 
-###  ⚙️ 三、政策制定者的五項建議（Recommendations for Policymakers）
+###  ⚙️ 三、給`政策制定者`的五項建議（Recommendations for `Policymakers`）
 
 1. **促進可信 AI 的研發投資(Investing in AI research and development)**  
    - 政府應支持能提升社會福祉與創新的 AI 研發計畫。
