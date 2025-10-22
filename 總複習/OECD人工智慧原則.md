@@ -1,4 +1,4 @@
-# 🤖 OECD 人工智慧原則（OECD AI Principles）
+##  🤖 OECD 人工智慧原則（OECD AI Principles）
 
 > *Organisation for Economic Co-operation and Development (OECD)*  
 > 通過時間：2019 年 5 月（2024 年更新）  
@@ -7,7 +7,7 @@
 
 ---
 
-## 🏛 一、基本資訊
+###  🏛 一、基本資訊
 
 | 項目 | 說明 |
 |------|------|
@@ -18,7 +18,7 @@
 
 ---
 
-## 💡 二、五大「價值為本」原則（Values-based Principles）
+### 💡 二、五大「價值為本」原則（Values-based Principles）
 
 | 編號 | 原則名稱 | 中文說明 |
 |------|-----------|-----------|
@@ -30,7 +30,7 @@
 
 ---
 
-## ⚙️ 三、政策制定者的五項建議（Recommendations for Policymakers）
+###  ⚙️ 三、政策制定者的五項建議（Recommendations for Policymakers）
 
 1. **促進可信 AI 的研發投資(Investing in AI research and development)**  
    - 政府應支持能提升社會福祉與創新的 AI 研發計畫。
@@ -50,7 +50,7 @@
 ---
 
 
-## 🌏 四、OECD AI 原則 × 聯合國教科文組織 AI 倫理建議 對照表
+###  🌏 四、OECD AI 原則 × 聯合國教科文組織 AI 倫理建議 對照表
 
 | 面向 | OECD AI Principles | UNESCO AI Ethics Recommendation |
 |------|--------------------|--------------------------------|
@@ -63,7 +63,7 @@
 
 
 
-## 📚 參考資料
+###  📚 參考資料
 
 - OECD (2019). *Recommendation of the Council on Artificial Intelligence*.  
   👉 [官方英文版 PDF](https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/06/what-are-the-oecd-principles-on-ai_f5a9a903/6ff2a1c4-en.pdf)
